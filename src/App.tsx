@@ -7,7 +7,7 @@ const postCardProps = {
   userIconUrl: "http://placehold.jp/100x100.png",
   createdAt: moment(),
   pkmnPartyName: "テンプレ型パーティ",
-  pkmnImgUrl: "http://placehold.jp/500x300.png",
+  pkmnImgUrl: "https://uc.uxpin.com/files/1062856/1034413/20191121193133-d57707a4ea38ad127d2bf5429c8fc525.jpg",
   tweetUrl: "参照ツイート",
   likeCount: 100
 };
