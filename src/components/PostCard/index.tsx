@@ -23,13 +23,15 @@ const PostCard: React.FC<PostCardProps> = ({
 }) => {
   return (
     <CardWrapper>
-      <CardTrainerBox>
-        <img src={userIconUrl} alt="" />
-        <div>{userName}</div>
-        <div>{pkmnPartyName}</div>
+      <CardHeader>
+        <CardLoginUserBox>
+          <img src={userIconUrl} alt="" />
+          <div>{userName}</div>
+        </CardLoginUserBox>
         <div>{createdAt.format("YYYY/MM/DD")}</div>
-      </CardTrainerBox>
+      </CardHeader>
       <CardContent>
+        <div>{pkmnPartyName}</div>
         <img src={pkmnImgUrl} alt="" />
       </CardContent>
       <CardActions>
@@ -43,9 +45,16 @@ const PostCard: React.FC<PostCardProps> = ({
 
 const CardWrapper = styled.div`
 `;
-const CardTrainerBox = styled.div`
+
+const CardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const CardLoginUserBox = styled.div`
   display: flex;
 `;
+
 const CardContent = styled.div`
   
 `;
