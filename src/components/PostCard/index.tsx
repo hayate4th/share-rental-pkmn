@@ -5,32 +5,30 @@ interface PostCardProps {
   userName: string;
   userIconUrl: string;
   createdAt: Moment;
-  postTitle: string;
+  pkmnPartyName: string;
   pkmnImgUrl: string;
-  pkmnPartyDescription: string;
   tweetUrl: string;
+  likeCount: number;
 }
 
 const PostCard: React.FC<PostCardProps> = ({
   userName,
   userIconUrl,
   createdAt,
-  postTitle,
+  pkmnPartyName,
   pkmnImgUrl,
-  pkmnPartyDescription,
-  tweetUrl
+  tweetUrl,
+  likeCount
 }) => {
   return (
     <div>
-      <div>{userName}</div>
       <img src={userIconUrl} alt="" />
-      <div>{createdAt.format("YYYY-MM-DD hh:mm:ss")}</div>
-      <div>{postTitle}</div>
+      <div>{userName}</div>
+      <div>{pkmnPartyName}</div>
+      <div>{createdAt.format("YYYY/MM/DD")}</div>
       <img src={pkmnImgUrl} alt="" />
-      <div>{pkmnPartyDescription}</div>
-      <button>いいね</button>
-      <button>レビュー</button>
-      <button>お気に入り</button>
+      <button>いいね{likeCount}</button>
+      <button>共有</button>
       <div>{tweetUrl}</div>
     </div>
   );

@@ -6,10 +6,10 @@ const postCardProps = {
   userName: "ユーザー名",
   userIconUrl: "http://placehold.jp/100x100.png",
   createdAt: moment(),
-  postTitle: "タイトル",
+  pkmnPartyName: "テンプレ型パーティ",
   pkmnImgUrl: "http://placehold.jp/500x300.png",
-  pkmnPartyDescription: "パーティの説明",
-  tweetUrl: "参照ツイート"
+  tweetUrl: "参照ツイート",
+  likeCount: 100
 };
 
 const App: React.FC = () => {
