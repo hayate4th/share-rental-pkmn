@@ -12,6 +12,7 @@
       "types",
       "node_modules/@types"
     ],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   }
 }
