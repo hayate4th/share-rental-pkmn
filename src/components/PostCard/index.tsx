@@ -23,12 +23,12 @@ const PostCard: React.FC<PostCardProps> = ({
 }) => {
   return (
     <CardWrapper>
-      <CardHeader>
+      <CardTrainerBox>
         <img src={userIconUrl} alt="" />
         <div>{userName}</div>
         <div>{pkmnPartyName}</div>
         <div>{createdAt.format("YYYY/MM/DD")}</div>
-      </CardHeader>
+      </CardTrainerBox>
       <CardContent>
         <img src={pkmnImgUrl} alt="" />
       </CardContent>
@@ -43,7 +43,7 @@ const PostCard: React.FC<PostCardProps> = ({
 
 const CardWrapper = styled.div`
 `;
-const CardHeader = styled.div`
+const CardTrainerBox = styled.div`
   display: flex;
 `;
 const CardContent = styled.div`
